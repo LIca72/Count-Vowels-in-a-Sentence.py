@@ -1,0 +1,17 @@
+# Count Vowels in a Sentence using Dictionary
+
+vowels_count = {
+    "a": 0,
+    "e": 0,
+    "i": 0,
+    "o": 0,
+    "u": 0
+}
+
+sentence = input("Enter a sentence: ").lower()  # convert to lowercase for consistency
+
+for letter in sentence:
+    if letter in vowels_count:
+        vowels_count[letter] += 1
+
+print(f"Vowel counts in this sentence: {vowels_count}")
